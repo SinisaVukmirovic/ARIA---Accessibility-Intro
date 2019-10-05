@@ -23,15 +23,14 @@
     
     <div class="container">
 
-        <h1>ARIA - Accessibility Intro</h1>
+        <h1 tabindex="0">ARIA - Accessibility Intro</h1>
 
         <main>
-            <h3>Introduction to Accessibility</h3>
-            <h4>For vision impaired users</h4>
+            <h4 tabindex="0">Introduction to Accessibility - For vision impaired users</h4>
             
             <hr>            
 
-            <h2>Read more about ARIA</h2>
+            <h2 tabindex="0">Read more about ARIA</h2>
 
             <ul>
                 <li>
@@ -49,26 +48,32 @@
                     <button
                      aria-expanded="false"
                      aria-controls="section-2"
-                     id="btn-2" class="accordion">ARIA in HTML<span class="expander down"></span></button>
+                     id="btn-2" 
+                     class="accordion">ARIA in HTML<span class="expander down"></span></button>
                     <p
                      id="section-2" 
                      role="region"
-                     aria-labelledby="btn-2" class="expander">ARIA in HTML is a [HTML] specification module. Any HTML features, conformance requirements, or terms that this specification module makes reference to, but does not explicitly define, are defined in the [HTML] specification.</p>
+                     aria-labelledby="btn-2" 
+                     class="expander">ARIA in HTML is a [HTML] specification module. Any HTML features, conformance requirements, or terms that this specification module makes reference to, but does not explicitly define, are defined in the [HTML] specification.</p>
                 </li>
                 <li>
                     <button
                      aria-expanded="false"
                      aria-controls="section-3"
-                     id="btn-3" class="accordion">ARIA works by<span class="expander down"></span></button>
+                     id="btn-3" 
+                     class="accordion">ARIA works by<span class="expander down"></span></button>
                     <p
                      id="section-3" 
                      role="region"
-                     aria-labelledby="btn-3" class="expander">changing and augmenting the standard DOM accessibility tree.
+                     aria-labelledby="btn-3" 
+                     class="expander">changing and augmenting the standard DOM accessibility tree.
                     ARIA works by changing and augmenting the standard DOM accessibility tree.Although ARIA allows us to subtly (or even radically) modify the accessibility tree for any element on the page, that is the only thing it changes.</p>
                 </li>
             </ul>
         </main>
     </div>
+
+    <span class="info">To test it out, you need "ChromeVox Classic Extension" or other browsers screen reader equivalents</span>
 
     <script src="script.js"></script>
 </body>

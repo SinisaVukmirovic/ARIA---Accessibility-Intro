@@ -72,6 +72,11 @@ ul li p.expander {
     margin-left: 1em;
 }
 
+.info {
+    color: cornflowerblue;
+    margin-left: 5%;
+}
+
 @media only screen and (max-width: 768px) {
     html {
         font-size: 10px;
