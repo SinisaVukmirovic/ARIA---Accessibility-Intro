@@ -35,16 +35,35 @@
 
             <ul>
                 <li>
-                    <button class="accordion">Introduction to ARIA<span class="expander down"></span></button>
-                    <p class="expander">Using ARIA attributes, however, we can give the element the missing information so the screen reader can properly interpret it</p>
+                    <button
+                     aria-expanded="false"
+                     aria-controls="section-1"
+                     id="btn-1"
+                     class="accordion">Introduction to ARIA<span class="expander down"></span></button>
+                    <p id="section-1" 
+                     role="region"
+                     aria-labelledby="btn-1"
+                     class="expander">Using ARIA attributes, however, we can give the element the missing information so the screen reader can properly interpret it</p>
                 </li>
                 <li>
-                    <button class="accordion">ARIA in HTML<span class="expander down"></span></button>
-                    <p class="expander">ARIA in HTML is a [HTML] specification module. Any HTML features, conformance requirements, or terms that this specification module makes reference to, but does not explicitly define, are defined in the [HTML] specification.</p>
+                    <button
+                     aria-expanded="false"
+                     aria-controls="section-2"
+                     id="btn-2" class="accordion">ARIA in HTML<span class="expander down"></span></button>
+                    <p
+                     id="section-2" 
+                     role="region"
+                     aria-labelledby="btn-2" class="expander">ARIA in HTML is a [HTML] specification module. Any HTML features, conformance requirements, or terms that this specification module makes reference to, but does not explicitly define, are defined in the [HTML] specification.</p>
                 </li>
                 <li>
-                    <button class="accordion">ARIA works by<span class="expander down"></span></button>
-                    <p class="expander">changing and augmenting the standard DOM accessibility tree.
+                    <button
+                     aria-expanded="false"
+                     aria-controls="section-3"
+                     id="btn-3" class="accordion">ARIA works by<span class="expander down"></span></button>
+                    <p
+                     id="section-3" 
+                     role="region"
+                     aria-labelledby="btn-3" class="expander">changing and augmenting the standard DOM accessibility tree.
                     ARIA works by changing and augmenting the standard DOM accessibility tree.Although ARIA allows us to subtly (or even radically) modify the accessibility tree for any element on the page, that is the only thing it changes.</p>
                 </li>
             </ul>

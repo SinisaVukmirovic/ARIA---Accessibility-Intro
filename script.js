@@ -8,7 +8,7 @@ accordions.forEach(accordion => {
         if (panel.style.display === 'block') {
             panel.style.display = 'none';
 
-            // this.setAttribute('aria-expanded', 'false');
+            this.setAttribute('aria-expanded', 'false');
 
             this.firstElementChild.classList.remove('up');
             this.firstElementChild.classList.add('down');
@@ -16,7 +16,7 @@ accordions.forEach(accordion => {
         else {
             panel.style.display = 'block';
 
-            // this.setAttribute('aria-expanded', 'true');
+            this.setAttribute('aria-expanded', 'true');
 
             this.firstElementChild.classList.add('up');
         }

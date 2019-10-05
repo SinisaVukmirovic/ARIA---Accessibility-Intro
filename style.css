@@ -71,3 +71,12 @@ ul li p.expander {
     display: none;
     margin-left: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+    header {
+        padding: .25em 5%;
+    }
+}
